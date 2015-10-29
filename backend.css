@@ -1,0 +1,127 @@
+.phpinfo table {
+	background-color: #fefefe;
+    border: 1px solid #ccc;
+    padding: 5px;
+    width: 100%;
+	border-radius: 1px;
+	box-shadow: 0 8px 6px -6px black;
+}
+ 
+.phpinfo .center {
+   text-align: center;
+}
+.phpinfo .center table {
+   margin-left: auto;
+   margin-right: auto;
+   text-align: left;
+}
+.phpinfo .center th {
+   text-align: center !important;
+}
+.phpinfo td, .phpinfo th {
+   /* border: 1px solid #a2aab8; */
+   vertical-align: baseline;
+   padding: 2px 5px;
+}
+.phpinfo h1 {
+   font-size: 16px;
+   font-weight: bold;
+   color: #000;
+   text-transform: none;
+}
+.phpinfo h2 {
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+	background-color: #fefefe;
+	border: 1px solid #ccc;
+	padding: 5px;
+	border-radius: 1px;
+	box-shadow: 0 8px 6px -6px black;
+}
+.phpinfo .p {
+   text-align: left;
+}
+.phpinfo .e {
+   background-color: #e3e3ea;
+   font-weight: bold;
+   color: #000000;
+   width: 300px;
+}
+.phpinfo .h {
+   /* background-color: #a2aab8; */
+   font-weight: bold;
+   color: #000000;
+   font-size: 11px;
+}
+.phpinfo .v {
+   background-color: #efeff4;
+   color: #000000;
+}
+.phpinfo i {
+   color: #666666;
+   background-color: #cccccc;
+   padding: 0 10px;
+}
+.phpinfo img {
+   float: right;
+   border: solid 1px #1a1a1a;
+   background-color:#9999cc;
+}
+.phpinfo hr {
+   background-color: #cccccc;
+   border: 0px;
+   height: 1px;
+   color: #1a1a1a;
+}
+.phpinfo .x {
+}
+.phpinfo .tt {
+}
+.phpinfo .te {
+   font-weight:bold;
+}
+.phpinfo .tv {
+   position:relative;
+   overflow:auto;
+}
+.phpinfo .w {
+	color: #f00;
+}
+
+.phpinfo .sysmenu {
+	padding: 0;
+	margin: 10px 0 0 0;
+	border-bottom: 3px solid #dfdfdf;
+	height:18px;
+}
+.phpinfo .sysmenu a {
+	background-color: #444;
+	height:9px;
+	padding: 5px; 
+	color: #fff;
+	text-decoration: none;
+}
+.phpinfo .sysmenu a#current,.phpinfo .sysmenu a:hover {
+	background-color: #555;
+	text-decoration: none;
+}
+
+.argos_theme .sysmenu {
+	padding: 0;
+	margin: 10px 0 0 0;
+	border-bottom: 3px solid #dfdfdf;
+	height:18px;
+}
+.argos_theme .sysmenu a {
+	background-color: #28609B;
+	height:9px;
+	padding: 5px; 
+	color: #fff;
+	border-radius: 5px 5px 0 0; 
+	text-decoration: none;
+}
+.argos_theme .sysmenu a#current,.argos_theme .sysmenu a:hover {
+	background-color: #D25E59;
+	text-decoration: none;
+}
