@@ -7,8 +7,8 @@
  * @link			http://www.dev4me.nl/
  * @license         http://www.gnu.org/licenses/gpl.html
  * @platform        WebsiteBaker 2.8.x
- * @version         0.4.0
- * @lastmodified    April 8, 2014
+ * @version         0.4.1
+ * @lastmodified    August 23, 2016
  *
  */
 
@@ -33,6 +33,10 @@ if(is_object($database->DbHandle)) {
 	$status = explode('  ', mysql_stat());
 }
 
+$strictMode = $database->get_one('SELECT @@sql_mode');
+$strict_info = ((strpos($strictMode, 'STRICT_TRANS_TABLES') !== false) OR (strpos($strictMode, 'STRICT_ALL_TABLES') !== false)) ?
+    "MySQL strict mode active":"MySQL strict mode not active\n";
+
 ?>
 <table cellpadding="3" border="0">
 	<tbody>
@@ -47,6 +51,7 @@ if(is_object($database->DbHandle)) {
 	<tr><td class='e'>Server version</td><td class='v'><?php echo $server_info ?></td></tr>
 	<tr><td class='e'>Host info</td><td class='v'><?php echo $host_info ?></td></tr>
 	<tr><td class='e'>Protocol version</td><td class='v'><?php echo $proto_info ?></td></tr>
+	<tr><td class='e'>Strict mode</td><td title="<?php echo $strictMode ?>" class='v'><?php echo $strict_info ?></td></tr>
 	<tr><td class='e'>Client info</td><td class='v'><?php echo $client_info ?></td></tr>
 	<tr><td class='e'>Client encoding</td><td class='v'><?php echo $client_encoding ?></td></tr>
 </table>

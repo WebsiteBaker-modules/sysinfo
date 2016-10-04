@@ -7,8 +7,8 @@
  * @link			http://www.dev4me.nl/
  * @license         http://www.gnu.org/licenses/gpl.html
  * @platform        WebsiteBaker 2.8.x
- * @version         0.4.0
- * @lastmodified    April 8, 2014
+ * @version         0.4.1
+ * @lastmodified    August 23, 2016
  *
  */
 
@@ -18,7 +18,7 @@ if(defined('WB_PATH') == false) { die("Cannot access this file directly"); }
 $module_directory = 'sysinfo';
 $module_name = ' System Information';
 $module_function = 'tool';
-$module_version = '0.4.0';
+$module_version = '0.4.1';
 $module_platform = '2.8.x';
 $module_author = 'Ruud Eisinga - <a href="http://www.dev4me.nl" target="_blank">Dev4me</a>';
 $module_license	= 'GNU General Public License';
